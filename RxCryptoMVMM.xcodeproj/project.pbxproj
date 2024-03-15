@@ -13,6 +13,7 @@
 		071310542BA45DF70065AAB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071310522BA45DF70065AAB4 /* Main.storyboard */; };
 		071310562BA45DFE0065AAB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071310552BA45DFE0065AAB4 /* Assets.xcassets */; };
 		071310592BA45DFE0065AAB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071310572BA45DFE0065AAB4 /* LaunchScreen.storyboard */; };
+		071310692BA460CF0065AAB4 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071310682BA460CF0065AAB4 /* CryptoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		071310552BA45DFE0065AAB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		071310582BA45DFE0065AAB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0713105A2BA45DFE0065AAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071310682BA460CF0065AAB4 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		0713104B2BA45DF70065AAB4 /* RxCryptoMVMM */ = {
 			isa = PBXGroup;
 			children = (
-				0713104C2BA45DF70065AAB4 /* AppDelegate.swift */,
-				0713104E2BA45DF70065AAB4 /* SceneDelegate.swift */,
-				071310502BA45DF70065AAB4 /* ViewController.swift */,
+				071310672BA45F510065AAB4 /* Service */,
+				071310662BA45F480065AAB4 /* Model */,
+				071310642BA45EAD0065AAB4 /* ViewModel */,
+				071310622BA45E9A0065AAB4 /* View */,
 				071310522BA45DF70065AAB4 /* Main.storyboard */,
 				071310552BA45DFE0065AAB4 /* Assets.xcassets */,
 				071310572BA45DFE0065AAB4 /* LaunchScreen.storyboard */,
 				0713105A2BA45DFE0065AAB4 /* Info.plist */,
 			);
 			path = RxCryptoMVMM;
+			sourceTree = "<group>";
+		};
+		071310622BA45E9A0065AAB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0713104C2BA45DF70065AAB4 /* AppDelegate.swift */,
+				0713104E2BA45DF70065AAB4 /* SceneDelegate.swift */,
+				071310502BA45DF70065AAB4 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		071310642BA45EAD0065AAB4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		071310662BA45F480065AAB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				071310682BA460CF0065AAB4 /* CryptoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		071310672BA45F510065AAB4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 			files = (
 				071310512BA45DF70065AAB4 /* ViewController.swift in Sources */,
 				0713104D2BA45DF70065AAB4 /* AppDelegate.swift in Sources */,
+				071310692BA460CF0065AAB4 /* CryptoModel.swift in Sources */,
 				0713104F2BA45DF70065AAB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
